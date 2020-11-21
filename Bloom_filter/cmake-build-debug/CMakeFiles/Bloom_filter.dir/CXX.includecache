@@ -1,0 +1,34 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/anasbenmustafa/CLionProjects/Bloom_filter/main.cpp
+algorithm
+-
+iostream
+-
+vector
+-
+string
+-
+fstream
+-
+cmath
+-
+map
+-
+sstream
+-
+cmath
+-
+string
+-
+fstream
+-
+map
+-
+

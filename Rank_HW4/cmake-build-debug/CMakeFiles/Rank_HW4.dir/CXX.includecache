@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/anasbenmustafa/CLionProjects/Rank_HW4/main.cpp
+iostream
+-
+vector
+-
+fstream
+-
+thread
+-
+chrono
+-
+

@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/anasbenmustafa/CLionProjects/GrachamScan2/main.cpp
+iostream
+-
+string
+-
+vector
+-
+stdlib.h
+-
+fstream
+-
+algorithm
+-
+cstring
+-
+
