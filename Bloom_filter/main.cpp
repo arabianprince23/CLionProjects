@@ -29,8 +29,8 @@ public:
 
     void Set(int position, bool value)
     {
-        int num = position / 32; // i
-        int posNum = position % 32; // shift
+        int num = position / 32;
+        int posNum = position % 32;
         int one = 1;
         container[num] = (value ? container[num] | (one << posNum) : container[num] & ~(one << posNum));
     }
