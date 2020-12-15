@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/Users/anasbenmustafa/CLionProjects/testproj2/main.cpp
+/Users/anasbenmustafa/CLionProjects/Microproject2_threads/main.cpp
 iostream
 -
 thread

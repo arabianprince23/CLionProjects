@@ -4,6 +4,7 @@
 #include <chrono>
 #include <clocale>
 #include <cstdlib>
+
 using namespace std;
 
 static int quantityOfDikari, currentquantityOfKuski, currentIndexOfDikar, quantityOfKuski, quantityOfRepeats;
@@ -11,7 +12,6 @@ mutex mtx;
 thread *threads;
 
 // Генерируем рандомное число между значениями min и max.
-// Предполагается, что функцию srand() уже вызывали
 int getRandomNumber(int min, int max)
 {
     static const double fraction = 1.0 / (static_cast<double>(RAND_MAX) + 1.0);
@@ -20,9 +20,7 @@ int getRandomNumber(int min, int max)
 }
 
 void EatProcess() {
-
     mtx.lock(); // Начало критической секции
-
         currentIndexOfDikar %= quantityOfDikari; // Порядковый номер дикаря
         currentquantityOfKuski -= 1; // Дикарь ест и из горшка вычитается один кусок
 
@@ -37,9 +35,7 @@ void EatProcess() {
             th->join();
             delete th; // Очищаем память от использованного потока повара
         }
-
     mtx.unlock(); // Конец критической секции
-
 }
 
 // Функция реализована для удобства ограничения количества итераций заполнения/опустошения горшка (пользователь задаёт кол-во итераций в программе)
