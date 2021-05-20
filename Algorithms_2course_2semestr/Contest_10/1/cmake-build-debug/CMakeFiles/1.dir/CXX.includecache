@@ -1,0 +1,32 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/anasbenmustafa/CLionProjects/Algorithms_2course_2semestr/Contest_10/1/Node.h
+string
+-
+vector
+-
+
+/Users/anasbenmustafa/CLionProjects/Algorithms_2course_2semestr/Contest_10/1/ReadWriter.cpp
+fstream
+-
+exception
+-
+Node.h
+/Users/anasbenmustafa/CLionProjects/Algorithms_2course_2semestr/Contest_10/1/Node.h
+
+/Users/anasbenmustafa/CLionProjects/Algorithms_2course_2semestr/Contest_10/1/main.cpp
+ReadWriter.cpp
+/Users/anasbenmustafa/CLionProjects/Algorithms_2course_2semestr/Contest_10/1/ReadWriter.cpp
+iostream
+-
+algorithm
+-
+queue
+-
+
